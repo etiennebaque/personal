@@ -29,11 +29,28 @@ body {
 }
 
 .skills {
-  .title h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
+  text-align: center;
+  .skill-title {
+    h2 {      
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .icons {
+      font-weight: normal;
+      .devicons {
+        font-size: 35px;
+      }
+      .title {
+        font-size: 12px;
+      }
+      .skill {
+        margin: 3px 8px;
+      }
+    }
+    .goto-cv {
+
+    }
 
   }
 }
