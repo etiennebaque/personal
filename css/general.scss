@@ -2,10 +2,17 @@
 ---
 body {
   font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
 
-  section {
-    margin-top: 30px;
-  }
+section {
+  margin-top: 30px;
+}
+
+h3 {      
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
 }
 
 .navbar {
@@ -17,6 +24,10 @@ body {
       color: rgb(0, 255, 0)
     }
   }
+}
+
+.hero {
+  margin-top: 0px;
 }
 
 .introduction {
@@ -31,11 +42,6 @@ body {
 .skills {
   text-align: center;
   .skill-title {
-    h2 {      
-      text-transform: uppercase;
-      font-size: 13px;
-      font-weight: bold;
-    }
     .icons {
       font-weight: normal;
       .devicons {
@@ -48,10 +54,16 @@ body {
         margin: 3px 8px;
       }
     }
-    .goto-cv {
-
-    }
-
   }
+}
+
+.about-me {
+  text-align: center;
+}
+
+.footer {
+  padding: 10px 0px;
+  font-size: 12px;
+  margin-top: 20px;
 }
      
