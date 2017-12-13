@@ -23,3 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
 });
+
+$( document ).ready(function() {
+    var username = "etiennebaque";
+    var hostname = "gmail.com";
+    $("#emailAddress").html(username + "@" + hostname);
+});
