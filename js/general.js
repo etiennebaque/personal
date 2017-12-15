@@ -28,4 +28,13 @@ $( document ).ready(function() {
     var username = "etiennebaque";
     var hostname = "gmail.com";
     $("#emailAddress").html(username + "@" + hostname);
+
+    $("#contactLink").click(function() {
+        var contact = $("#contactSection");
+        if (contact.length) {
+            $('html, body').animate({
+                scrollTop: contact.offset().top
+            }, 1000);
+        }
+    });
 });
