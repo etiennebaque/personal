@@ -29,12 +29,15 @@ $( document ).ready(function() {
     var hostname = "gmail.com";
     $("#emailAddress").html(username + "@" + hostname);
 
-    $("#contactLink").click(function() {
-        var contact = $("#contactSection");
-        if (contact.length) {
-            $('html, body').animate({
-                scrollTop: contact.offset().top
-            }, 1000);
-        }
+    $("#skypeLink").click(function() {
+        $("#skypeModal").addClass('is-active');
+    });
+
+    $('.delete').click(function() {
+        $("#skypeModal").removeClass('is-active');
+    });
+
+    $('.modal-background').click(function() {
+        $("#skypeModal").removeClass('is-active');
     });
 });

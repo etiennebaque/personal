@@ -76,7 +76,7 @@ layout: default
     </div>
 </section>
 
-<section id="contactSection" class="contact-me">
+<section id="contact" class="contact-me">
     <div class="container">
         <div class="columns">
             <div class="column is-offset-2 is-8">
@@ -105,14 +105,9 @@ layout: default
                                     </a>
                                 </div>
                                 <div class="contact skype">
-                                    <a href="https://www.linkedin.com/in/etienne-baqué-07141b16" target="_blank">
+                                    <a id="skypeLink">
                                         <i class="fa fa-skype" aria-hidden="true"></i>
                                     </a>
-                                    <div id="skypePopover" style="visibility: hidden;">
-                                        <div class="arrow-up"></div>
-                                        <span id="skypeContact">etiennebaque</span>
-                                    </div>
-                                    
                                 </div>
                             </div>
                         </nav>
@@ -122,3 +117,24 @@ layout: default
         </div>
     </div>    
 </section>
+
+<div class="modal" id="skypeModal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box">
+            <article class="media">
+                <div class="media-left">
+                    <i class="fa fa-skype" aria-hidden="true"></i>
+                </div>
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            Skype ID: etiennebaque
+                        </p>
+                    </div>
+                </div>
+                <button class="delete"></button>
+            </article>
+        </div>
+    </div>
+</div>
