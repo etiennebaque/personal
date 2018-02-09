@@ -28,10 +28,12 @@
         <title>Etienne Baqué</title>
     </head>
     
-    <body>
-        {% include navigation.html %}
-
-        {{ content }}
+    <body class="site-body">
+        <main class="site-content">
+            {% include navigation.html %}
+        
+            {{ content }}
+        </main>
 
         {% include footer.html %}
     </body>
