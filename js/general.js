@@ -27,17 +27,36 @@ document.addEventListener('DOMContentLoaded', function () {
 $( document ).ready(function() {
     var username = "etiennebaque";
     var hostname = "gmail.com";
-    $("#emailAddress").html(username + "@" + hostname);
-
-    $("#skypeLink").click(function() {
-        $("#skypeModal").addClass('is-active');
-    });
+    $(".emailAddress").html(username + "@" + hostname);
 
     $('.delete').click(function() {
-        $("#skypeModal").removeClass('is-active');
+        $("#contactModal").removeClass('is-active');
     });
 
     $('.modal-background').click(function() {
-        $("#skypeModal").removeClass('is-active');
+        $("#contactModal").removeClass('is-active');
+    });
+
+    $('#contactLink').click(function() {
+        if (location.pathname == "/") {
+            $("#contact")[0].scrollIntoView()
+            $("#contact").effect("highlight", {color: "#dcffcf"}, 1500);
+        } else {
+            $("#contactModal").addClass('is-active');
+        }
+    });
+
+    $( document ).tooltip({
+        position: {
+            my: "center bottom-10 right-15",
+            at: "center top",
+            using: function( position, feedback ) {
+              $(this).css(position);
+              $("<div>")
+                .addClass(feedback.vertical)
+                .addClass(feedback.horizontal)
+                .appendTo(this);
+            }
+          }
     });
 });

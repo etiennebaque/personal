@@ -22,6 +22,8 @@
         <meta name="theme-color" content="#ffffff">
         
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://use.fontawesome.com/d6356a54a4.js"></script>
         <script src="/js/general.js"></script>
 
@@ -33,6 +35,8 @@
             {% include navigation.html %}
         
             {{ content }}
+
+            {% include contactmodal.html %}
         </main>
 
         {% include footer.html %}
