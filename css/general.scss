@@ -144,27 +144,51 @@ h3 {
   .experience {
     margin: 30px 0px;
     .environment {
-      margin-top: 15px;   
+      margin-top: 15px;
+    }
+    .logo {
+      @media only screen and (max-width: 767px) {
+        padding-bottom: 0px;
+        padding-top: 25px;
+        text-align: center;
+      }
     }
     .cv-role {
-      &.tig {
-        padding-top: 17px;
+      .role-title {
+        font-size: 18px;
       }
-      &.rd {
-        padding-top: 23px;
+      .cv-time-period {
+        font-size: 14px;
       }
-      &.celad {
-        padding-top: 28px;
+      @media only screen and (min-width: 768px) {
+        &.tig {
+          padding-top: 17px;
+        }
+        &.rd {
+          padding-top: 23px;
+        }
+        &.celad {
+          padding-top: 28px;
+        }
+        &.accenture {
+          padding-top: 45px;
+        }
+        &.madloba {
+          padding-top: 38px;
+        }
+        &.aj {
+          padding-top: 28px;
+        }
       }
-      &.accenture {
-        padding-top: 45px;
+
+      @media only screen and (max-width: 767px) {
+        padding-bottom: 0px;
+        padding-top: 0px;
+        text-align: center;
       }
-      &.madloba {
-        padding-top: 38px;
-      }
-      &.aj {
-        padding-top: 28px;
-      }
+    }
+    .role-desc {
+      text-decoration: underline;
     }
     .girls-that-code {
       margin: 10px 0px 20px 0px;
