@@ -32,6 +32,9 @@ h3 {
 .navbar {
   .navbar-brand {
     color: inherit;
+    &.no-margin {
+      margin-left: 0px;
+    }
     .name-link {
       background-color: black;
       color: white;
