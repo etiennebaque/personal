@@ -76,6 +76,10 @@ h3 {
       }
       .skill {
         margin: 3px 8px;
+        &.vuejs {
+          max-height: 41px;
+          max-width: 41px;
+        }
       }
     }
   }
