@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 $( document ).ready(function() {
-    var username = "etiennebaque";
-    var hostname = "gmail.com";
+    var username = "mail";
+    var hostname = "etiennebaque.com";
     $(".emailAddress").html(username + "@" + hostname);
 
     $('.delete').click(function() {
