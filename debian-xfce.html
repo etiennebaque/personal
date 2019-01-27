@@ -1,0 +1,53 @@
+---
+title: Debian Xfce - Setup notes
+layout: default
+---
+<section id="deb_table">
+  <div class="container">
+    <div class="content">
+      <h2>Debian Xfce - Notes</h2>
+
+      <div>
+        Here's some help to troubleshoot some issues that may occur after a fresh install of Debian Xfce
+        <ul>
+          <li><a href="#video_fix">Videos shows horizontal tears, and the quality is not great</a></li>
+          <li><a href="#touchpad_fix">Middle tap on touchpad is not working</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="deb_answers">
+  <div class="container">
+    <div class="content">
+      <h3 id='video_fix'>Videos show horizontal tears and their quality is not great</h3>
+      <p>
+        Create <code>/etc/X11/xorg.conf.d/20-intel.conf</code> (if your have an Intel graphic card) and add the following content in it:
+        <pre>
+Section "Device"
+  Identifier  "Intel Graphics"
+  Driver      "Intel"
+  Option      "TearFree"    "true"
+EndSection</pre>
+
+        You may need to turn off compositing ('Window manager tweaks' > 'Compositor').
+      </p>
+
+      <h3 id='touchpad_fix'>Middle tap on touchpad is not working</h3>
+
+      <p>
+        Create <code>/etc/X11/xorg.conf.d/40-libinput.conf</code> and add the following content in it:
+        <pre>
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection</pre>
+
+    </div>
+  </div>
+</section>
+
