@@ -12,6 +12,7 @@ layout: default
         <ul>
           <li><a href="#video_fix">Videos shows horizontal tears, and the quality is not great</a></li>
           <li><a href="#touchpad_fix">Middle tap on touchpad is not working</a></li>
+          <li><a href="#dark_theme">How to make Qt apps match dark themes on Xfce?</a></li>
         </ul>
       </div>
     </div>
@@ -46,6 +47,20 @@ Section "InputClass"
         Driver "libinput"
         Option "Tapping" "on"
 EndSection</pre>
+      </p>
+
+      <h3 id="dark_theme">How to make Qt apps match dark themes on Xfce?</h3>
+      <p>
+        Open <code>~/.config/Trolltech.conf</code> and add the following lines
+        <pre>
+[Qt]
+style=GTK+</pre>
+        Save and exit the file. Then run the following:
+        <pre>sudo apt-get install qt5-style-plugins</pre>
+        Finally, open <code>/etc/environment</code> and add this line:
+        <pre>QT_QPA_PLATFORMTHEME=gtk2</pre>
+      </p>
+      <p> (Source: <a href="https://www.youtube.com/watch?v=rP4DWu24ff0" target="_blank">https://www.youtube.com/watch?v=rP4DWu24ff0)</a></p>
 
     </div>
   </div>
