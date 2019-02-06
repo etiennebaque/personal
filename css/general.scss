@@ -145,6 +145,14 @@ section {
   #notAvailable {
     text-align: center;
   }
+  .download {
+    .fa {
+      color: #cc0000;
+    }
+    @media only screen and (min-width: 768px) {
+      text-align: right;
+    }
+  }
 }
 
 .cv-section {
