@@ -13,6 +13,7 @@ layout: default
           <li><a href="#video_fix">Videos shows horizontal tears, and the quality is not great</a></li>
           <li><a href="#touchpad_fix">Middle tap on touchpad is not working</a></li>
           <li><a href="#dark_theme">How to make Qt apps match dark themes on Xfce?</a></li>
+          <li><a href="#caps_lock">Map Caps-lock key to Ctrl</a></li>
         </ul>
       </div>
     </div>
@@ -62,6 +63,13 @@ style=GTK+</pre>
       </p>
       <p> (Source: <a href="https://www.youtube.com/watch?v=rP4DWu24ff0" target="_blank">https://www.youtube.com/watch?v=rP4DWu24ff0)</a></p>
 
+      <h3 id="caps_lock">Map Caps-lock key to Ctrl</h3>
+      <ul>
+        <li>Open <code>Session and Startup</code> (via the Whisker menu, for example), click on the <code>Application Autostart</code> tab.</li>
+        <li>Click on <code>Add</code>.</li>
+        <li>In the small window, enter a name and add this command: <code>/usr/bin/setxkbmap -option 'ctrl:nocaps'</code>. OK and leave.</li>
+        <li>Restart your computer.</li>
+      </ul>
     </div>
   </div>
 </section>
