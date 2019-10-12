@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
-    
 });
 
 $( document ).ready(function() {
@@ -44,10 +43,10 @@ $( document ).ready(function() {
         } else {
             $("#contactModal").addClass('is-active');
         }
-        
+
         if ($('.navbar-burger').hasClass('is-active')) {
             $('.navbar-burger').click()
-        }          
+        }
 
     });
 
