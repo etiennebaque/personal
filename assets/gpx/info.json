@@ -1,0 +1,14 @@
+[
+  {
+    "filename": "oaf_inner_loop.gpx",
+    "title": "OAF inner loop",
+    "description": "This loop extends the compound loop to take you to the OAF office, via the road Which is West of it.",
+    "color": "red"
+  },
+  {
+    "filename": "compound_loop.gpx",
+    "title": "Compound loop",
+    "description": "This is shortest loop, when going left then right form the compound.",
+    "color": "blue"
+  }
+]
