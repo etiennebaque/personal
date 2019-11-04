@@ -37,7 +37,10 @@ $( document ).ready(function() {
 function popupDescription(target) {
   track = target.options.track;
   distance = (target.get_distance() / 1000).toFixed(2)
-  text = "<h3>" + track.title + "</h3><br/>" + track.description + "<br/><br/>Distance: " + distance + " kms.";
+  distanceMiles = (distance * 0.6213).toFixed(2)
+
+  distanceText = "Distance: " + distanceMiles + " miles - " + distance + " kms.";
+  text = "<h3>" + track.title + "</h3><br/>" + track.description + "<br/><br/>" + distanceText + "<br/>";
   return text;
 }
 
