@@ -29,10 +29,12 @@ $( document ).ready(function() {
     $(".emailAddress").html(username + "@" + hostname);
 
     $('.delete').click(function() {
+        toggleMap();
         $("#contactModal").removeClass('is-active');
     });
 
     $('.modal-background').click(function() {
+        toggleMap();
         $("#contactModal").removeClass('is-active');
     });
 
@@ -41,6 +43,7 @@ $( document ).ready(function() {
             $("#contact")[0].scrollIntoView()
             $("#contact").effect("highlight", {color: "#dcffcf"}, 1500);
         } else {
+            toggleMap();
             $("#contactModal").addClass('is-active');
         }
 
@@ -64,3 +67,9 @@ $( document ).ready(function() {
           }
     });
 });
+
+function toggleMap() {
+  if (location.pathname == "/oaf-runs/") {
+    $('#mapid').toggle();
+  }
+}
