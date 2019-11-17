@@ -38,7 +38,7 @@ $( document ).ready(function() {
         $("#contactModal").removeClass('is-active');
     });
 
-    $('#contactLink').click(function() {
+    $('#contactLink, .contact-popup').click(function() {
         if (location.pathname == "/") {
             $("#contact")[0].scrollIntoView()
             $("#contact").effect("highlight", {color: "#dcffcf"}, 1500);

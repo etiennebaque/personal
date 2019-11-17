@@ -19,8 +19,28 @@ body {
   flex: 1;
 }
 
+h2 {
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 13px 0px;
+}
+
+ul {
+  list-style: inherit;
+  margin-left: 20px;
+}
+
 section {
   margin-top: 60px;
+}
+
+.note {
+  padding-top: 30px;
+  font-size: 18px;
 }
 
 .navbar {
@@ -160,10 +180,6 @@ section {
   h2 {
     font-size: 21px;
     margin-bottom: 25px;
-  }
-  ul {
-    list-style: inherit;
-    margin-left: 20px;
   }
   .experience {
     padding: 20px 0px 25px 0px;
