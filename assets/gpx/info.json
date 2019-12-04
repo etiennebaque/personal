@@ -10,5 +10,11 @@
     "title": "Compound loop",
     "description": "This is shortest loop, when going left then right from the compound.",
     "color": "blue"
+  },
+  {
+    "filename": "oaf_outer_loop.gpx",
+    "title": "OAF outer loop",
+    "description": "This is a loop that circles around OAF and goes back to the compound via the main Ikonyero road.",
+    "color": "yellow"
   }
 ]
