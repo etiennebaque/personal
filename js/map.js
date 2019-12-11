@@ -1,5 +1,7 @@
+var map;
+
 $( document ).ready(function() {
-  var map = L.map('mapid').setView([0.291,34.709], 14);
+  map = L.map('mapid').setView([0.289,34.726], 15);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -26,7 +28,6 @@ $( document ).ready(function() {
       }).on('loaded', function(e) {
         color = e.target.options.polyline_options.color;
         e.target.bindPopup(popupDescription(e.target));
-        map.fitBounds(e.target.getBounds());
       }).on('click', function(e) {
         e.target.getPopup();
       }).addTo(map);
