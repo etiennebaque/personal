@@ -36,6 +36,9 @@ body {
 h2 {
   font-size: 21px;
   margin-bottom: 25px;
+  &.misc-title {
+    margin-bottom: 0px
+  }
 }
 
 h3 {
@@ -73,6 +76,9 @@ section {
       font-weight: bold;
       .prompt {
         color: rgb(0, 255, 0)
+      }
+      &:hover {
+        background-color: #555;
       }
     }
   }
@@ -267,8 +273,40 @@ section {
   z-index: 40;
 }
 
-#devfestSection {
+.misc-page {
   padding: 0px 15px;
+
+  .back-link {
+    font-size: 13px;
+  }
+
+  &.recipe-index {
+    ul {
+      padding: 15px 0px;
+
+      @media only screen and (max-width: 767px) {
+        li {
+          padding: 5px 0px;
+        }
+      }
+    }
+  }
+
+  &.recipe-page {
+    ol {
+      list-style: inside decimal;
+    }
+    .p-title {
+      text-decoration: underline;
+      font-weight: bolder;
+      margin: 12px 0px;
+    }
+    ul.sub-list {
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
 }
 
 .footer {
